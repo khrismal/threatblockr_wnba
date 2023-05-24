@@ -27,6 +27,7 @@ npm init
 ● Cypress will scaffold and auto-configure config and e2e.js files
 ● Add the following code to cypress.config.js
 
+"""
 const { defineConfig } = require("cypress");
 module.exports = defineConfig({
 e2e: {
@@ -34,18 +35,20 @@ viewportHeight:1080,
 viewportWidth:1920
 },
 });
-
+"""
 
 ## Troubleshooting
 
 Tip: If the application under test throws an uncaught exception, add the following snippet
 to ~/cypress/support/e2e.js
 
+"""
 Cypress.on('uncaught:exception', (err, runnable) => {
 // returning false here prevents Cypress from
 // failing the test
 return false
 })
+"""
 
 ## Running
 
