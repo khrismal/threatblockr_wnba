@@ -14,8 +14,8 @@ describe('My assigment', () =>{
    //iterate over the table 
    cy.get('tbody > tr  > td:nth-child(1)').each(($elm)=> {
 
-    //declare variable and get text from it
-    const t = $elm.text();
+    //declare variable and get text from it, filter out numbers
+    const t = $elm.text().replace(/\d+/g, '');
 
     //print team names using cypress log API
     cy.log(t)  
