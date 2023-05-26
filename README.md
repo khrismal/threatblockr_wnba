@@ -52,8 +52,9 @@ return false
 
 ## Running
 
+Run Cypress Test Runner via npx cypress open
 To run the test module, open the Cypress console and run assessment.cy.js
 
 ## Notes
 
-The current WNBA website does not correspond with the WNBA website in the assessment. In the assessment, the TEAM table has a 'League Standings' header, and below the header, there are columns labeled 'Bank' and 'Team'. However, in the current TEAM table, there is no 'Bank' column. Instead, the 'Team' column contains a combination of numbers, logos, and team abbreviations. Therefore, it is not possible to iterate through the second column and print team names because it is the first column in the table. Also, the output will be contain number and team name.
+The current WNBA website does not correspond with the WNBA website in the assessment. In the assessment, the TEAM table has a 'League Standings' header, and below the header, there are columns labeled 'Bank' and 'Team'. However, in the current TEAM table, there is no 'Bank' column. Instead, the 'Team' column contains a combination of numbers, logos, and team abbreviations. Therefore, it is not possible to iterate through the second column and print team names because it is the first column in the table.
